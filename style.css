@@ -1,0 +1,41 @@
+span.st-emotion-cache-ocqkz7.e1f1d6gn4{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background-image.png);
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-box{
+    background: #ff574a;
+    text-align: center;
+    padding: 40px 90px;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+}
+.profile-pic{
+    width: 15px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 6px;
+    margin: 40;
+
+
+}
+span.st-emotion-cache-zt5igj.e1nzilvr4{
+    background-color: blue;
+}
+

@@ -1,0 +1,20 @@
+div.st-emotion-cache-nahz7x.e1nzilvr5>hr
+{
+    background-color: green;
+}
+img
+{
+    border-radius: 2%;
+}
+a {
+    text-decoration: none;
+    color:white !important;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #d33682 !important;
+    text-decoration: none;
+}
+
+ul {list-style-type: none;}
