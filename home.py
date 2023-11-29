@@ -1,7 +1,8 @@
 import json
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie  # pip install streamlit-lottie
+from PIL import Image
 
 def app():
     with open('home.css') as source_des:
@@ -53,83 +54,45 @@ def app():
     
     
     with c1:
-        st.markdown("---")      
-        st.markdown("<h2 style='text-align: center;'>🎬Select Category To Watch a Video🎬</h2>",unafe_allow_html=True)
-        
+        st.markdown("---")     
+        st.subheader("🎬Select Category To Watch a Video🎬") 
+       
     col1, col2, col3 = st.columns(3)
         
     v1 = col1.button("Coding Videos💻")
     if v1:
             with st.container():
-        
-                # Replace 'your_video_file1.mp4' and 'your_video_file2.mp4' with the paths to your video files
-                video1 = 'Download.mp4'
-                video2 = 'Download (1).mp4'
-                
-
-                # Set the width and height of the videos
-                video_width = 200
-                video_height = 200
-
-                # Create a two-column layout
                 col1, col2,  = st.columns(2)
-
-                # Display the first video in the first column
-                col1.video(video1, format="Download.mp4", start_time=0)
-
-                # Display the second video in the second column
-                col2.video(video2, format="Download (1).mp4", start_time=0)
-                
-                
+                # Replace 'your_video_file1.mp4' and 'your_video_file2.mp4' with the paths to your video files
+                with col1:
+                    st.video('Download.mp4')
+                with col2:
+                    st.video('Download (1).mp4')
+       
         
     v2 = col2.button("Dance Videos🕺")
     if v2:
             with st.container():
-                
-            
-            
-                # Replace 'your_video_file1.mp4' and 'your_video_file2.mp4' with the paths to your video files
-                video5 = 'Download (2).mp4'
-                video6 = 'Download (3).mp4'
-
-                # Set the width and height of the videos
-                video_width = 200
-                video_height = 200
-
                 # Create a two-column layout
                 col1, col2, = st.columns(2)
 
+                with col1:
+                        st.video('Download (2).mp4')
+                with col2:
+                        st.video('Download (3).mp4')
             
-                # Display the first video in the first column
-                col1.video(video5, format="Download (4).mp4", start_time=0)
-                
-                # Display the first video in the first column
-                col2.video(video6, format="Download (5).mp4", start_time=0)
-
         
     v3 = col3.button("Playing Guitar🎸")
     if v3:
             with st.container():
                 
-            
-            
-                # Replace 'your_video_file1.mp4' and 'your_video_file2.mp4' with the paths to your video files
-                video5 = 'Download (4).mp4'
-                video6 = 'Download (5).mp4'
-
-                # Set the width and height of the videos
-                video_width = 200
-                video_height = 200
-
                 # Create a two-column layout
                 col1, col2, = st.columns(2)
 
-            
-                # Display the first video in the first column
-                col1.video(video5, format="Download (4).mp4", start_time=0)
-                
-                # Display the first video in the first column
-                col2.video(video6, format="Download (5).mp4", start_time=0)
+                with col1:
+                    st.video('Download (4).mp4')
+                with col2:
+                    st.video('Download (5).mp4')
     with c2:     
         def load_lottiefile(filepath: str):
                     with open(filepath, "r") as f:
