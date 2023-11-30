@@ -11,7 +11,7 @@ def app():
     
   
     # INSERT YOUR API  KEY WHICH YOU PASTED IN YOUR secrets.toml file 
-    api_key =  st.secrets.get["api_key"]
+    api_key =  st.secrets["api_key"]
 
     url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid={}'
     
