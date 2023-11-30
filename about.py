@@ -62,27 +62,15 @@ def app():
            
             with col2:
                 st.write("#")
-                st.markdown("<h2 style='text-align: center;'>Weather Forecast</h2>", unsafe_allow_html=True)
+                st.markdown("<h2 style='text-align: center;'News Articles</h2>", unsafe_allow_html=True)
                 st.markdown("---")
                 st.write(
                         """
-                        - ✅ Ever wondered what the skies have in store for you? 
-                        Our weather forecast section utilizes data from OpenWeatherMap to provide you with up-to-date and accurate weather information.
-                        From daily forecasts to long-term trends, we've got you covered. 
-                        So, whether you're planning a weekend getaway or just want to know if you need an umbrella tomorrow, 
-                        trust our weather predictions to keep you informed.
-                        """
+                       - ✅ Stay in the know with our curated selection of news articles. I believe in the power of information,
+                        and here you'll find a variety of topics – from global headlines to niche interests. It's not just about the news; 
+                        it's about fostering a community of informed individuals who appreciate the value of staying connected to the world.
+                         """
                 )
-            st.write("#")
-            st.markdown("<h2 style='text-align: center;'>News Articles</h2>", unsafe_allow_html=True)
-            st.markdown("---")
-            st.write(
-                    """
-                    - ✅ Stay in the know with our curated selection of news articles. I believe in the power of information,
-                    and here you'll find a variety of topics – from global headlines to niche interests. It's not just about the news; 
-                    it's about fostering a community of informed individuals who appreciate the value of staying connected to the world.
-                    """
-            )
             st.write("#")
             st.markdown("<h2 style='text-align: center;'>Why Mhark's Blog?</h2>", unsafe_allow_html=True)
             st.markdown("---")
