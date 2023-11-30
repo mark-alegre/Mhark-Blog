@@ -9,9 +9,9 @@ def app():
    
 
     
-    default_value =  "c9903b69d4b62d1ebe317b21587de0d2"
+  
     # INSERT YOUR API  KEY WHICH YOU PASTED IN YOUR secrets.toml file 
-    api_key =  st.secrets.get["api_key", default_value]
+    api_key =  st.secrets.get["api_key"]
 
     url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid={}'
     
