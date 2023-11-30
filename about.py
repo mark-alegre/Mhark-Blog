@@ -62,7 +62,7 @@ def app():
            
             with col2:
                 st.write("#")
-                st.markdown("<h2 style='text-align: center;'News Articles</h2>", unsafe_allow_html=True)
+                st.markdown("<h2 style='text-align: center;'>News Articles</h2>", unsafe_allow_html=True)
                 st.markdown("---")
                 st.write(
                         """
