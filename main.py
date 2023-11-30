@@ -34,7 +34,7 @@ img = get_img_as_base64("tech2.jpg")
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-color: lightblue;
+background-color: Black;
 }}
 [data-testid="stSidebar"] > div:first-child {{
 background-image: url("data:image/png;base64,{img}");
