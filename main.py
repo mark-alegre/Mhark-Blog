@@ -34,11 +34,7 @@ img = get_img_as_base64("tech2.jpg")
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://images.unsplash.com/photo-1501426026826-31c667bdf23d");
-background-size: 180%;
-background-position: top left;
-background-repeat: no-repeat;
-background-attachment: local;
+background-color: 0f1010;
 }}
 [data-testid="stSidebar"] > div:first-child {{
 background-image: url("data:image/png;base64,{img}");
