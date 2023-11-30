@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-import home, trending, account, your_post, about
+import home, account, your_post, about
 from PIL import Image
 
 img = Image.open('profile-pic.png')
