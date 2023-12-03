@@ -30,7 +30,7 @@ def get_img_as_base64(file):
 
 
 img = get_img_as_base64("HD1.jpg")
-img1 = get_img_as_base64("HD2.jpg")
+img1 = get_img_as_base64("black.jpg")
 
 
 page_bg_img = f"""
