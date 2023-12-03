@@ -13,7 +13,9 @@ st.set_page_config(
 )
 hide_st_style = """
             <style>
+            #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
+            header {visibility: hidden;}
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
@@ -27,19 +29,22 @@ def get_img_as_base64(file):
     return base64.b64encode(data).decode()
 
 
-img = get_img_as_base64("tech2.jpg")
+img = get_img_as_base64("HD1.jpg")
+img1 = get_img_as_base64("HD2.jpg")
+
 
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-primaryColor = "#d36682";
-backgroundColor = "#002b36";
-textColor = "#fff";
+background-image: url("data:image/png;base64,{img1}");
+background-position: left; 
+background-repeat: repeat;
+background-attachment: fixed;
 }}
 [data-testid="stSidebar"] > div:first-child {{
 background-image: url("data:image/png;base64,{img}");
-background-position: center; 
-background-repeat: no-repeat;
+background-position: left; 
+background-repeat: repeat;
 background-attachment: fixed;
 }}
 

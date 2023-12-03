@@ -54,9 +54,9 @@ def app():
     
     
     with c1:
-          
+        st.markdown("---")     
         st.subheader("🎬Select Category To Watch a Video🎬") 
-        st.markdown("---")
+       
     col1, col2, col3 = st.columns(3)
         
     v1 = col1.button("Coding Videos💻")
